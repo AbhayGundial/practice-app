@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'practice-app';
+  // color: string;
+  showPara = true;
+  count = 0;
+  onClick(){
+    
+    this.count++;
+
+    if (this.showPara) {
+      this.showPara = false;
+    } else {
+      this.showPara = true;
+    }
+    console.log(this.count);
+    
+  }
 }
